@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Covid Vaccine Tracker | Website </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+    <!-- <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/include-html.min.js"></script> -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png"/>
+    
+ 
+     
+</head>
+
+<body>
+    <div class="header">
+        <h1>Vaccine Tracker Website</h1>
+      </div>
+ 
+      <div class="slider-box">
+        <div id="slider">
+            <img src="image2.jpg" alt="">
+            <img src="image1.jpg" alt="">
+            <!-- <img src="images/slide3.jpg" alt="">
+            <img src="images/slide4.jpg" alt=""> -->
+        </div>
+        <div class="indicators">
+            <span id="btn1" class="active"></span>
+            <span id="btn2"></span>
+            <!-- <span id="btn3"></span>
+            <span id="btn4"></span> -->
+        </div>
+    </div>
+
+   
+    <script>
+
+        var slide = document.getElementById("slider");
+        var btn1 = document.getElementById('btn1');
+        var btn2 = document.getElementById('btn2');
+        // var btn3 = document.getElementById('btn3');
+        // var btn4 = document.getElementById('btn4');
+
+        btn1.onclick = function () {
+            slide.style.transform = "translateX(0px)";
+            btn1.classList.add('active');
+            btn2.classList.remove('active');
+            // btn3.classList.remove('active');
+            // btn4.classList.remive('active');
+        };
+        btn2.onclick = function () {
+            slide.style.transform = "translateX(-100%)";
+            btn1.classList.remove('active');
+            btn2.classList.add('active');
+            // btn3.classList.remove('active');
+            // btn4.classList.remove('active');
+        };
+        // btn3.onclick = function () {
+        //     slide.style.transform = "translateX(-200%)";
+        //     btn1.classList.remove('active');
+        //     btn2.classList.remove('active');
+        //     btn3.classList.add('active');
+        //     btn4.classList.remove('active');
+        // };
+        // btn4.onclick = function () {
+        //     slide.style.transform = "translateX(-300%)";
+        //     btn1.classList.remove('active');
+        //     btn2.classList.remove('active');
+        //     btn3.classList.remove('active');
+        //     btn4.classList.add('active');
+        // };
+
+        
+
+
+</script>
+
+    <br>
+    <br>
+    <br>
+    
+    
+
+
+    <img src="image 3.jpg" alt="" class="center"> 
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2>Search Your Nearest Vaccine Center</h2>
+    <br>
+    <br>
+    <p>Get the preview list of the nearest center and check availability of vaccine slots.</p>
+    <br>
+    <h3>(As the API is having some problem so we could't load the available slots timing for the vaccine slots (i.e. showing object|object in this case) But you can access the rest of information which is absoultely Accurate) </h3>
+    <br>
+    <div class="searchBox">
+        <input type="text" placeholder="Enter your Area Pincode" id="input" />
+        <button>
+          <img
+            src="https://images.vexels.com/media/users/3/132068/isolated/preview/f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png"
+            alt="search"/>
+        </button>
+      </div>
+
+      <div class="cards"></div>
+
+      <script src="./script2.js"></script>
+      <!-- <script src="./min.js"></script> -->
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+     
+      <div style="text-align:center">
+        <a href="https://forms.gle/ozontUYqMUz5AM4P8" style="display:inline-block" font-size="30px">Click here for Vaccine Registration</a>
+    </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+      <img src="image4.jpg" alt="" class="center">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+    <div class="Footer">
+        <h1> Copyright &copy; Made by  Gayatri Bagul, Priyanka Bonde, Amisha Kulkarni All rights reserved </h1>
+    </div>
+
+
+
+</body>
+
+</html>
